@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <title>My Portfolio Site</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
+    <link href="http://weloveiconfonts.com/api/?family=zocial" rel="stylesheet"/>
+    <script src="js/jquery-3.1.1.min.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <header>
+        <div class="row head-border">
+          <div class="col-md-3 col-xs-3">
+            <img src="images/logo.svg" alt="Site logo" class="img-responsive logo"/>
+          </div>
+          <div class="col-md-9 col-xs-9 text-right text-uppercase">
+            <h1 class="name">Claudio Moraes</h1>
+            <h4 class="name-detail">Front-end Beginner</h4>
+          </div>
+        </div>
+      </header>
+
+      <div class="row">
+        <div class="col-md-12 col-xs-12 image-center">
+          <picture>
+            <source media="(min-width: 800px)" srcset="images/horses-1600_large_2x.jpg 2x, images/horses-800_large_1x.jpg" />
+            <source media="(min-width: 500px)" srcset="images/horses_medium.jpg" />
+            <img src="images/horses_small.jpg" alt="Horses in Hawaii" class="img-responsive img-center picture-banner-img">
+          </picture>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <h2 class="feat-work">Featured Work</h2>
+        </div>
+      </div>
+
+      <div class="row  text-center bottom-border">
+        <div class="col-md-4 col-xs-4 myapps">
+          <picture>
+            <source media="(min-width: 800px)" srcset="images/cockatoos-800_large_1x.jpg" />
+            <img src="images/cockatoos_medium.jpg" alt="Cockatoos on a verandah in Victoria, Australia" class="img-responsive image-pointer" data-toggle="modal" data-target="#first-app"/>
+          </picture>
+          <h2 class="app-title">Appify</h2>
+          <p class="app-subtitle">
+            <a href="https://github.com/udacity/Appify/">Appify Link</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-xs-4 myapps">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/sfo-800_large_1x.jpg" />
+          <img src="images/sfo_medium.jpg" alt="View from aircraft window near San Francisco airport" class="img-responsive image-pointer" data-toggle="modal" data-target="#second-app"/>
+        </picture>
+        <h2 class="app-title">Sunflower</h2>
+        <p class="app-subtitle">
+          <a href="https://github.com/udacity/Sunflower/">Sunflower Link</a>
+        </p>
+        </div>
+
+        <div class="col-md-4 col-xs-4 myapps">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/volt-800_large_1x.jpg" />
+          <img src="images/volt_medium.jpg" alt="Volt sign in old Berlin power station" class="img-responsive image-pointer" data-toggle="modal" data-target="#third-app"/>
+        </picture>
+        <h2 class="app-title">Bokeh</h2>
+        <p class="app-subtitle">
+          <a href="https://github.com/udacity/Bokeh/">Bokeh Link</a>
+        </p>
+        </div>
+
+      </div>
+
+    </div>
+    <footer class="text-center">
+
+      <div class="container">
+        <div id="social" class="col-md-12 col-xs-12 footer-font-size">
+          <a href="https://twitter.com/" class="zocial-twitter">Twitter</a>
+          <a href="https://www.facebook.com/" class="zocial-facebook">Facebook</a>
+          <a href="https://plus.google.com/" class="zocial-googleplus">Google+</a>
+          <a href="http://github.com/" class="zocial-github">Github</a>
+          </div>
+        </div>
+
+      <!--logo font-->
+      <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+    </footer>
+  <!-- Modal -->
+    <div class="modal fade" id="first-app" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">First App</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/500/300" alt="Imagem de Gatinho 500x300" >
+            This was my first project in this class. I learned a lot about HTML and CSS.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Modal 2-->
+    <div class="modal fade" id="second-app" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel2">Second App</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/g/300/300" alt="Imagem de Gatinho 300x300" >
+            Aprendi os fundamentos de web design responsivo.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Modal 3-->
+    <div class="modal fade" id="third-app" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel3">Thired App</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://placekitten.com/g/400/400" alt="Imagem de Gatinho 400x400" >
+            E agora pretendo aprender javascript.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
